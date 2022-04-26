@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+   overflow: hidden;
+    margin-top: 0;
+    margin-left: 0;
+    display: grid;
+    grid-template-rows: 8fr 2fr;
+    background-image: url(back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+#image{
+
+    width: 90%;
+}
+#mybutton{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+
+#buttonleft{
+width: 9rem;
+height: 4rem;
+font-size: 150%;
+
+margin-top: 4rem;
+margin-left: 20%;
+border-radius: 1rem;
+background-color: aqua;
+color: blueviolet;
+
+animation-name: anim2;
+animation-duration: 3s;
+
+
+   
+}
+#buttonleft:hover{
+    width: 12rem;
+    height: 5rem;
+}
+#buttonright:hover{
+    width: 12rem;
+    height: 5rem;
+}
+
+
+#buttonright{
+    width: 9rem;
+    height: 4rem;
+    font-size: 150%;
+    margin-top: 4rem;
+    margin-left: 50%;
+    border-radius: 1rem;
+    color: blueviolet;
+    background-color: aqua;
+
+    animation-name: anim1;
+    animation-duration: 3s;
+
+
+
+}
+
+
+.background{ 
+    border: solid white 1rem;
+    border-radius: 2rem;
+    box-shadow: 2rem 2rem 2rem white ;
+    width: 70%;
+    margin-left: calc(30rem - 10rem );
+    height:calc(50rem - 10rem );
+    margin-top: 4rem;
+}
+.background:hover{
+
+    width: 90%;
+    height: 90%;
+    margin-top: 1rem;
+    margin-left: calc(20rem - 10rem );
+
+}
+/* .background{
+
+
+    animation-name: animimage;
+    animation-duration: 10s;
+    width: 70%;
+
+
+
+left: 0;
+transition: left 1s, transform 1s;
+white-space: nowrap;
+} */
+
+
+
+
+
+@keyframes anim1{
+from{scale: 0;
+    transform: translate(-50%, 150%);
+    
+}
+
+to{scale: 3;
+    margin-top: 4rem;
+    width:9rem ;
+
+}
+
+}
+
+@keyframes anim2{
+    from{scale: 0;
+        transform: translate(-150%, 150%);
+        
+    }
+    to{scale: 3;
+        margin-top: 4rem;
+        width:9rem ;
+    
+    }
+    
+    }
